@@ -22,5 +22,9 @@ By completing the libft project, students gain a deeper understanding of how the
 
 1. **Libc Functions:** Some of standard C functions
 2. **Additional Functions:** Functions Will be useful for later projects
-4. **Personal Functions:** 
+4. **Personal Functions:** Functions Will be useful for later, see the PDF.
 3. **Bonus Functions:** Functions will be useful for linked list manipulation
+
+Note:
+
+- Most of the functions names are start with **ft** .
