@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
+int	ft_memcmp(void *s1, void *s2, unsigned int n);
 int	ft_isalnum(int x);
 int	ft_atoi(const char *str);
 void    *ft_memcpy(void *dest, const void *src, unsigned int n);
