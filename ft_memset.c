@@ -1,24 +1,7 @@
 #include "libft.h"
-/*void *ft_memset(void *dest, int val, size_t nbr)
-{
-    unsigned char *new_dest;
-    unsigned char src;
-    size_t i;
-
-    new_dest = dest;
-    src = val;
-    i = 0;
-    while (i < nbr)
-    {
-        *new_dest = src;
-        new_dest++;
-        i++;
-    }
-    return (dest);
-}*/
 void    *ft_memset(void *s, int c, unsigned int n) 
 { 
-    unsigned char *ptr; // Declare an unsigned char pointer variable `ptr` to hold the memory address of `s`
+    unsigned    char    *ptr; // Declare an unsigned char pointer variable `ptr` to hold the memory address of `s`
 
     ptr = s; // Assign the value of `s` to the pointer variable `ptr`
     while (n-- > 0) // Loop through each byte in the memory block `n` times
