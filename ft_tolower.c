@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-int	ft_tolower(int x)
+int	ft_tolower(int c)
 {
-	if (x >= 'A' && x <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
-		return (x + 'a' - 'A');
+		return (c + 'a' - 'A');
 	}
-	return (x);
+	return (c);
 }

@@ -1,22 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elel-bah <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 15:12:39 by elel-bah          #+#    #+#             */
-/*   Updated: 2023/11/29 13:22:49 by elel-bah         ###   ########.fr       */
+/*   Created: 2023/11/21 18:09:04 by elel-bah          #+#    #+#             */
+/*   Updated: 2023/11/24 15:50:44 by elel-bah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	if (c >= 0 && c <= 127)
+	size_t	x;
+	size_t	y;
+	char	*substring;
+
+	if (!s)
+		return (NULL);
+	x = 0;
+	while (x < len && start < ft_strlen(s) && s[start + x])
+		x++;
+	y = 0;
+	substring = malloc((x + 1) * sizeof(char));
+	if (!substring)
+		return (NULL);
+	while (y < x && start < ft_strlen(s))
 	{
-		return (1);
+		substring[y] = s[start + y];
+		y++;
 	}
-	return (0);
+	substring[x] = '\0';
+	return (substring);
 }

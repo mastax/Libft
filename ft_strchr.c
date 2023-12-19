@@ -6,7 +6,7 @@
 /*   By: elel-bah <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:16:57 by elel-bah          #+#    #+#             */
-/*   Updated: 2023/11/09 18:38:00 by elel-bah         ###   ########.fr       */
+/*   Updated: 2023/11/13 11:03:51 by elel-bah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,10 @@ char	*ft_strchr(const char *s, int c)
 	while (*s != '\0')
 	{
 		if (*s == (char)c)
-		{
 			return ((char *)s);
-		}
 		s++;
 	}
 	if ((char)c == '\0')
-	{
 		return ((char *)s);
-	}
 	return (NULL);
 }

@@ -6,15 +6,15 @@
 /*   By: elel-bah <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 14:52:30 by elel-bah          #+#    #+#             */
-/*   Updated: 2023/11/06 15:11:22 by elel-bah         ###   ########.fr       */
+/*   Updated: 2023/11/22 17:07:02 by elel-bah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int x)
+int	ft_isdigit(int c)
 {
-	if (x >= '0' && x <= '9')
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}
